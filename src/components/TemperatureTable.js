@@ -1,4 +1,3 @@
-import '../styles/TemperatureTable.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import TemperatureRow from './TemperatureRow';
@@ -22,6 +21,7 @@ const TemperatureTable = () => {
       "https://api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&units=metric&appid=33c92b0552e0eea71460739025382726")
+      // https://newbedev.com/weather-api-key-code-example
     .then(response => {
       setTemperatureData(prevData => [...prevData, response.data] )
     }));

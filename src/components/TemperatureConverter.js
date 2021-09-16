@@ -1,4 +1,3 @@
-import '../styles/TemperatureConverter.css'
 import { useState } from 'react';
 
 const TemperatureConverter = () => {
@@ -49,7 +48,7 @@ const TemperatureConverter = () => {
   return (
     <form>
       <h3>Temperature converter</h3>
-      <table className="border-table">
+      <table>
         <tbody>
           <tr>
             <td>
