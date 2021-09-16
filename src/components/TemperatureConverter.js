@@ -10,7 +10,7 @@ const TemperatureConverter = () => {
     setFahrenheit("")
   }
 
-  const handleCelsiusChange = (event) => {
+  const handleCelsiusChange = event => {
     const c = event.target.value;
     if(isNumber(c)){
       setCelsius(c);
@@ -20,7 +20,7 @@ const TemperatureConverter = () => {
     }
   }
 
-  const handleFahrenheitChange = (event) => {
+  const handleFahrenheitChange = event => {
     const f = event.target.value;
     if(isNumber(f)){
       setCelsius(round(fahrenheitToCelsius(f)));
@@ -30,11 +30,11 @@ const TemperatureConverter = () => {
     }
   }
 
-  const celsiusToFahrenheit = (celsius) => {
+  const celsiusToFahrenheit = celsius => {
     return 9 / 5 * celsius + 32;
   }
 
-  const fahrenheitToCelsius = (fahrenheit) => {
+  const fahrenheitToCelsius = fahrenheit => {
     return 5 / 9 * (fahrenheit - 32);
   }
 
@@ -42,7 +42,7 @@ const TemperatureConverter = () => {
     return !isNaN(str) && !isNaN(parseFloat(str));
   }
 
-  const round = (num) => {
+  const round = num => {
     return Math.round(num * 100) / 100;
   }
 

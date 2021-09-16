@@ -9,7 +9,7 @@ const Clock = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const doubleDigit = (number) => {
+  const doubleDigit = number => {
     const result = number.toString();
     return result.length === 2 ? result : "0" + result;
   }

@@ -9,7 +9,6 @@ const TemperatureTable = () => {
     "Kaunas",
     "Klaipėda",
     "Šiauliai",
-    "Panevėžys",
     "Alytus",
     "Marijampolė",
     "Palanga",
