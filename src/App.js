@@ -6,7 +6,10 @@ import TemperatureTable from './components/TemperatureTable';
 function App() {
   return (
     <div className="App">
-      <h3>Current Lithuanian time <Clock /></h3>
+      <h3>
+        Current Lithuanian time
+        <Clock />
+      </h3>
       <TemperatureConverter/>
       <TemperatureTable/>
     </div>

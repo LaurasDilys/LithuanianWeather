@@ -19,8 +19,8 @@ table {
 }
 
 .border-cells * {
-  border: 1px solid #1bbc9d;
   padding: 10px;
+  border: 1px solid #1bbc9d;
 }
 
 .App {
@@ -46,4 +46,5 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
