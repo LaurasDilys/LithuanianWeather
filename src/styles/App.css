@@ -34,6 +34,13 @@ table {
   box-shadow: 0 0 150px 150px #99eedd;
 }
 
+@media screen and (min-width: 790px) {
+  .App {
+    margin: 30px 19%;
+    box-shadow: 0 0 19% 19% #99eedd;
+  }
+}
+
 .App > * {
   margin: 0 0 30px;
   display: flex;
