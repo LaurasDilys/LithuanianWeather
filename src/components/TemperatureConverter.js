@@ -1,5 +1,21 @@
 import { useState } from 'react';
 
+const celsiusToFahrenheit = celsius => {
+  return 9 / 5 * celsius + 32;
+}
+
+const fahrenheitToCelsius = fahrenheit => {
+  return 5 / 9 * (fahrenheit - 32);
+}
+
+const isNumber = str => {
+  return !isNaN(str) && !isNaN(parseFloat(str));
+}
+
+const round = num => {
+  return Math.round(num * 100) / 100;
+}
+
 const TemperatureConverter = () => {
   const [celsius, setCelsius] = useState();
   const [fahrenheit, setFahrenheit] = useState();
@@ -29,22 +45,6 @@ const TemperatureConverter = () => {
     }
   }
 
-  const celsiusToFahrenheit = celsius => {
-    return 9 / 5 * celsius + 32;
-  }
-
-  const fahrenheitToCelsius = fahrenheit => {
-    return 5 / 9 * (fahrenheit - 32);
-  }
-
-  const isNumber = str => {
-    return !isNaN(str) && !isNaN(parseFloat(str));
-  }
-
-  const round = num => {
-    return Math.round(num * 100) / 100;
-  }
-
   return (
     <form>
       <h3>Temperature converter</h3>
@@ -72,4 +72,5 @@ const TemperatureConverter = () => {
   );
 }
 
+export { round, celsiusToFahrenheit };
 export default TemperatureConverter;
